@@ -63,7 +63,7 @@ for k,en,es in [('tag','Web Design · Digital Solutions','Diseño web · Solucio
 K('privacy.title','Privacy Policy','Política de privacidad')
 K('privacy.p1','When you send our project inquiry form, we receive the details you enter: name, email, and project information, plus any optional fields you complete.','Cuando envías nuestro formulario de consulta, recibimos los datos que ingresas: nombre, correo y detalles del proyecto, además de los campos opcionales que completes.')
 K('privacy.p2','We use this information only to reply to your inquiry and discuss your project. We do not sell your data.','Usamos esta información solo para responder a tu consulta y conversar sobre tu proyecto. No vendemos tus datos.')
-K('privacy.p3','Form submissions are processed by a third-party form service. To request deletion of your data, email us at the address shown in the footer.','Los envíos del formulario son procesados por un servicio externo. Para solicitar la eliminación de tus datos, escríbenos al correo que aparece en el pie de página.')
+K('privacy.p3','Form submissions are processed by Netlify Forms. To request deletion of your data, email us at the address shown in the footer.','Los envíos del formulario son procesados por Netlify Forms. Para solicitar la eliminación de tus datos, escríbenos al correo que aparece en el pie de página.')
 K('privacy.p4','Draft text: have it reviewed before launch to match your form provider and local regulations.','Texto borrador: haz que lo revisen antes del lanzamiento para ajustarlo a tu proveedor de formularios y a la normativa local.')
 json.dump({k:v[0] for k,v in L.items()},open('locales/en.json','w',encoding='utf8'),ensure_ascii=False,indent=1)
 json.dump({k:v[1] for k,v in L.items()},open('locales/es.json','w',encoding='utf8'),ensure_ascii=False,indent=1)
@@ -83,7 +83,8 @@ NAMES={'name':'Full Name','business':'Business Name','email':'email','country':'
 def sel(i,k,nm,opts):
     return f'<div class="field"><label for="{i}" data-i18n="contact.{k}">{L["contact."+k][0]}</label><select id="{i}" name="{nm}">'+''.join(f'<option value="{L["contact."+o][0]}" data-i18n="contact.{o}">{L["contact."+o][0]}</option>' for o in opts)+'</select></div>'
 sec['contact']=f'''<section id="contact" class="contact-section"><div class="container">{T("contact.title","h2")}{T("contact.sub","p","section-text")}
-<form id="contact-form" class="contact-form" novalidate>
+<form id="contact-form" class="contact-form" name="burex-contact" method="POST" action="/" data-netlify="true" netlify-honeypot="_gotcha" novalidate>
+ <input type="hidden" name="form-name" value="burex-contact">
 {fld("name","name","text",True,"name")}{fld("business","business","text",False,"organization")}{fld("email","email","email",True,"email")}{fld("country","country","text",False,"country-name")}
 {sel("service","service","Service",["s1","s2","s3","s4","s5"])}
 <div class="field"><label for="hasSite" data-i18n="contact.hasSite">{L["contact.hasSite"][0]}</label><select id="hasSite" name="Has Website"><option value="No" data-i18n="contact.no">No</option><option value="Yes" data-i18n="contact.yes">Yes</option></select></div>

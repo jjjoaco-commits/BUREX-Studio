@@ -110,6 +110,6 @@
  "privacy.title": "Privacy Policy",
  "privacy.p1": "When you send our project inquiry form, we receive the details you enter: name, email, and project information, plus any optional fields you complete.",
  "privacy.p2": "We use this information only to reply to your inquiry and discuss your project. We do not sell your data.",
- "privacy.p3": "Form submissions are processed by a third-party form service. To request deletion of your data, email us at the address shown in the footer.",
+ "privacy.p3": "Form submissions are processed by Netlify Forms. To request deletion of your data, email us at the address shown in the footer.",
  "privacy.p4": "Draft text: have it reviewed before launch to match your form provider and local regulations."
 }

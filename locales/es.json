@@ -110,6 +110,6 @@
  "privacy.title": "Política de privacidad",
  "privacy.p1": "Cuando envías nuestro formulario de consulta, recibimos los datos que ingresas: nombre, correo y detalles del proyecto, además de los campos opcionales que completes.",
  "privacy.p2": "Usamos esta información solo para responder a tu consulta y conversar sobre tu proyecto. No vendemos tus datos.",
- "privacy.p3": "Los envíos del formulario son procesados por un servicio externo. Para solicitar la eliminación de tus datos, escríbenos al correo que aparece en el pie de página.",
+ "privacy.p3": "Los envíos del formulario son procesados por Netlify Forms. Para solicitar la eliminación de tus datos, escríbenos al correo que aparece en el pie de página.",
  "privacy.p4": "Texto borrador: haz que lo revisen antes del lanzamiento para ajustarlo a tu proveedor de formularios y a la normativa local."
 }

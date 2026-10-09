@@ -13,11 +13,10 @@
   form.addEventListener('submit',async e=>{
     e.preventDefault();status.textContent='';
     if(!Object.keys(rules).map(id=>check(document.getElementById(id))).every(Boolean))return;
-    const ep=(window.BUREX_CONFIG||{}).FORM_ENDPOINT||'';
-    if(!ep||ep.includes('YOUR_FORM_ID')){show('contact.notConfigured','err');return}
     btn.disabled=true;btn.textContent=tr('contact.sending');
     try{
-      const r=await fetch(ep,{method:'POST',body:new FormData(form),headers:{Accept:'application/json'}});
+      const data=new URLSearchParams(new FormData(form));
+      const r=await fetch('/',{method:'POST',body:data,headers:{'Content-Type':'application/x-www-form-urlencoded'}});
       if(!r.ok)throw new Error(r.status);
       form.reset();urlField.hidden=true;show('contact.success','ok');   // success only after a confirmed response
     }catch(err){show('contact.error','err')}                           // data stays in the form for retry
