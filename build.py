@@ -53,7 +53,6 @@ C=[('title',"Let's build something great.",'Construyamos algo grandioso.'),('sub
 ('project','Tell us about your project','Cuéntanos sobre tu proyecto'),('timeline','Preferred Timeline (optional)','Plazo preferido (opcional)'),('t1','As soon as possible','Lo antes posible'),('t2','Within a month','En un mes'),('t3','Flexible','Flexible'),('t4','Not sure yet','Aún no lo sé'),
 ('send','Send Project Inquiry →','Enviar consulta →'),('sending','Sending…','Enviando…'),
 ('privacy','We only use your details to reply to your inquiry. See our','Solo usamos tus datos para responder a tu consulta. Consulta nuestra'),('privacyLink','Privacy Policy','Política de privacidad'),
-('alt','Prefer to email us directly?','¿Prefieres escribirnos directamente?'),('altBtn','Send an Email →','Enviar un correo →'),
 ('success','Thank you for reaching out! Your project inquiry has been sent successfully. We\'ll get back to you by email.','¡Gracias por escribirnos! Tu consulta se envió correctamente. Te responderemos por correo electrónico.'),
 ('error','Something went wrong and your inquiry was not sent. Your details are still here, so please try again.','Algo salió mal y tu consulta no se envió. Tus datos siguen aquí, inténtalo de nuevo.'),
 ('notConfigured','The form is not connected yet. Please email us directly instead.','El formulario aún no está conectado. Por favor escríbenos directamente por correo.'),
@@ -97,7 +96,7 @@ sec['contact']=f'''<section id="contact" class="contact-section"><div class="con
 <div class="form-actions"><button class="btn btn-primary" id="submit-btn" type="submit" data-i18n="contact.send">{L["contact.send"][0]}</button></div>
 <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
 </form>
-<div class="alt-contact"><span data-i18n="contact.alt">{L["contact.alt"][0]}</span> <a class="btn btn-secondary btn-small" id="mailto-btn" href="mailto:" data-i18n="contact.altBtn">{L["contact.altBtn"][0]}</a></div></div></section>'''
+</div></section>'''
 sec['contact']=sec['contact'].replace('<p class="full" hidden></p>\n','')
 sec['privacy']='<section class="privacy-section"><div class="container prose">'+''.join(T(f"privacy.p{i}","p","section-text") for i in range(1,5))+'</div></section>'
 sec['hero']=f'''<section id="home" class="hero-section"><div class="hero-grid" aria-hidden="true"></div><div class="container hero-content">

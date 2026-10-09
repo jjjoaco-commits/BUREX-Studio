@@ -95,8 +95,6 @@
  "contact.sending": "Enviando…",
  "contact.privacy": "Solo usamos tus datos para responder a tu consulta. Consulta nuestra",
  "contact.privacyLink": "Política de privacidad",
- "contact.alt": "¿Prefieres escribirnos directamente?",
- "contact.altBtn": "Enviar un correo →",
  "contact.success": "¡Gracias por escribirnos! Tu consulta se envió correctamente. Te responderemos por correo electrónico.",
  "contact.error": "Algo salió mal y tu consulta no se envió. Tus datos siguen aquí, inténtalo de nuevo.",
  "contact.notConfigured": "El formulario aún no está conectado. Por favor escríbenos directamente por correo.",

@@ -66,7 +66,6 @@ input.invalid,textarea.invalid{border-color:#f87171}
 .field-error{color:#f87171;font-size:.85rem;min-height:1.2em}
 .form-note{color:var(--text-secondary);font-size:.85rem}.form-note a{color:var(--accent-hover);text-decoration:underline}
 .form-status{min-height:1.5em}.form-status.ok{color:#4ade80}.form-status.err{color:#f87171}
-.alt-contact{margin-top:40px;display:flex;gap:16px;align-items:center;flex-wrap:wrap;color:var(--text-secondary)}
 .page-hero{padding:80px 0 0}.page-hero h1{font-size:clamp(2rem,4vw,3rem)}
 .prose{max-width:720px}
 .footer{border-top:1px solid var(--border);padding:48px 0;color:var(--text-secondary);font-size:.9rem}

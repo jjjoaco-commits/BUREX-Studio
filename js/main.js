@@ -2,7 +2,6 @@ document.getElementById('year').textContent=new Date().getFullYear();
 (function(){
   const email=(window.BUREX_CONFIG||{}).CONTACT_EMAIL||'';
   const f=document.getElementById('footer-email');f.textContent=email;f.href='mailto:'+email;
-  const b=document.getElementById('mailto-btn');if(b)b.href='mailto:'+email;
 })();
 document.querySelectorAll('.faq-question').forEach(btn=>btn.addEventListener('click',()=>{
   const open=btn.getAttribute('aria-expanded')==='true';

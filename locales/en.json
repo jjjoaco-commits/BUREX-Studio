@@ -95,8 +95,6 @@
  "contact.sending": "Sending…",
  "contact.privacy": "We only use your details to reply to your inquiry. See our",
  "contact.privacyLink": "Privacy Policy",
- "contact.alt": "Prefer to email us directly?",
- "contact.altBtn": "Send an Email →",
  "contact.success": "Thank you for reaching out! Your project inquiry has been sent successfully. We'll get back to you by email.",
  "contact.error": "Something went wrong and your inquiry was not sent. Your details are still here, so please try again.",
  "contact.notConfigured": "The form is not connected yet. Please email us directly instead.",
