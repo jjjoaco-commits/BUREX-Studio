@@ -1,0 +1,4 @@
+.hero-grid{animation:grid-drift 30s linear infinite}
+@keyframes grid-drift{to{background-position:56px 56px}}
+.reveal{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}.reveal.visible{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none}}
